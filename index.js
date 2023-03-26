@@ -4,7 +4,7 @@ const headingsTextColor = document.querySelectorAll('.w3-text-grey')
 const rightColumnCards = document.querySelectorAll('.w3-twothird div')
 const secondaryColor = document.querySelectorAll('.w3-purple')
 const secondaryTextColor = document.querySelectorAll('.w3-text-purple')
-
+const btnWrapper = document.getElementById('switch')
 const btn = document.querySelector('.btn')
 
 btn.addEventListener('click', toggleMode)
@@ -16,6 +16,8 @@ function toggleMode () {
   toggleRightColumnTextColor()
   toggleSecondaryColor()
   toggleSecondaryTextColor()
+
+  btnWrapper.classList.toggle('dark-mode')
 }
 
 function toggleBodyColor() {
